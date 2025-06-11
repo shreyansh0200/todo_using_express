@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat new</title>
+        <link rel="stylesheet" href="/style.css">
+
+
+</head>
+<body>
+    <h1 class="header">edit</h1>
+<form method="post" action="/tasks/<%= task.id %>?_method=PATCH">
+    <input class="date" name="date" type="text" placeholder="date" value="<%= task.date %>">
+    <input class="head" name="head" type="text" placeholder="head" value="<%= task.head %>">
+    <textarea class="detail" rows="20" cols="35" name="detail"><%= task.detail %></textarea>
+    <button>submit</button>
+</form>
+
+  
+         
+</body>
+</html>

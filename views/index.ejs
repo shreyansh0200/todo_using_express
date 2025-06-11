@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo_express</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="header" >Creat your own to_do</h1>
+    
+    <% for (const task of tasks) {%>
+        <div class="container">
+            <h2 class="date" name="date"><%=task.date %></h2> <br>
+            <h2 class="head" name="head"><%=task.head %></h2><br>
+            <p class="detail" name="detail"><%=task.detail %></p><br>
+            <form action="http://localhost:8080/tasks/<%=task.id %>">
+                <button>view </button>
+            </form>
+            <form action="http://localhost:8080/tasks/<%=task.id %>/edit">
+                <button>edit</button>
+            </form>
+            <form method="post" action="http://localhost:8080/tasks/<%=task.id %>/?_method=DELETE">
+                <button>delete</button>
+            </form>
+
+        </div>
+        
+     <%} %>
+
+ <button ><a style=" color:white" href="http://localhost:8080/tasks/new">create new todo</a></button>
+
+    
+</body>
+</html>

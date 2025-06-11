@@ -1,0 +1,54 @@
+.header{
+    background-color:wheat;
+
+}
+body{
+    background-color: wheat;
+}
+.container{
+    margin: 20px;
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+    border: 5px  rgb(218, 92, 113) solid;
+    border-radius: 20px;
+    
+}
+.date{
+   background-color: aqua;
+   text-align: center;
+
+}
+.head{
+       background-color: rgb(4, 60, 60);
+       text-align: center;
+       color:white;
+       border: 2px   rgb(16, 106, 106) solid;
+       border-radius: 20px;
+
+
+    }
+.detail{
+       /* background-color: rgb(218, 92, 113); */
+       color:rgb(218, 92, 113);
+       text-align: center;
+
+
+}
+
+button{
+       background-color:rgb(84, 84, 213);
+       text-align: center;
+        border: 2px  rgb(43, 43, 130) solid;
+        border-radius: 20px;
+        color:wheat;
+}
+button:hover{
+       background-color: rgb(27, 27, 72);
+       color:white;
+       border: 2px  rgb(193, 193, 205) solid;
+
+}
+

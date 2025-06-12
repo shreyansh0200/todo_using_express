@@ -14,13 +14,13 @@
             <h2 class="date" name="date"><%=task.date %></h2> <br>
             <h2 class="head" name="head"><%=task.head %></h2><br>
             <p class="detail" name="detail"><%=task.detail %></p><br>
-            <form action="http://localhost:8080/tasks/<%=task.id %>">
+            <form action="/tasks/<%=task.id %>">
                 <button>view </button>
             </form>
-            <form action="http://localhost:8080/tasks/<%=task.id %>/edit">
+            <form action="/tasks/<%=task.id %>/edit">
                 <button>edit</button>
             </form>
-            <form method="post" action="http://localhost:8080/tasks/<%=task.id %>/?_method=DELETE">
+            <form method="post" action="/tasks/<%=task.id %>/?_method=DELETE">
                 <button>delete</button>
             </form>
 
@@ -28,7 +28,7 @@
         
      <%} %>
 
- <button ><a style=" color:white" href="http://localhost:8080/tasks/new">create new todo</a></button>
+ <button ><a style=" color:white" href="/tasks/new">create new todo</a></button>
 
     
 </body>

@@ -15,30 +15,30 @@ app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 
 let tasks=[
-    {
-        id:uuidv4(),
-        date:"12/12/12",
-        head:"project1",
-        detail:"todo projecet via express",
-    },
-    {
-        id:uuidv4(),
-        date:"12/12/12",
-        head:"project1",
-        detail:"todo projecet via express",
-    },
-    {
-        id:uuidv4(),
-        date:"12/12/12",
-        head:"project1",
-        detail:"todo projecet via express",
-    },
-    {
-        id:uuidv4(),
-        date:"12/12/12",
-        head:"project1",
-        detail:"todo projecet via express",
-    },
+    // {
+    //     id:uuidv4(),
+    //     date:"12/12/12",
+    //     head:"project1",
+    //     detail:"todo projecet via express",
+    // },
+    // {
+    //     id:uuidv4(),
+    //     date:"12/12/12",
+    //     head:"project1",
+    //     detail:"todo projecet via express",
+    // },
+    // {
+    //     id:uuidv4(),
+    //     date:"12/12/12",
+    //     head:"project1",
+    //     detail:"todo projecet via express",
+    // },
+    // {
+    //     id:uuidv4(),
+    //     date:"12/12/12",
+    //     head:"project1",
+    //     detail:"todo projecet via express",
+    // },
 ];
 
 app.get("/tasks",(req,res)=>{
